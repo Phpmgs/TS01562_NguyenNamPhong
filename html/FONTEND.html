@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/LoTrinh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="/JS/roadmap.js"></script>
+    <link rel="icon" type="imege/x-icon" href="/image/logo XÀI TẠM-01.png">
+    <title>Lộ Trình Học FrontEnd</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Trang trại những chú vịt mới học lập trình</h1>
+        <nav>
+            <ul>
+                <li><a href="Menu.html"><i class="fas fa-home"></i> Trang Chủ</a></li>
+                <li><a href="ChungToi.html"><i class="fas fa-book"></i> Về chúng tôi</a></li>
+                <li><a href="KhoaHoc.html"><i class="fas fa-book-open"></i> Khoá học</a></li>
+                <li><a href="LienHe.html"><i class="fas fa-envelope"></i> Liên Hệ</a></li>
+                <li><a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="h2"><i class="fas fa-rocket"></i> RoadMap FrontEnd</h2>
+        <div class="progress-container">
+            <img src="/image/image-removebg-preview.png" alt="Duck" class="duck">
+            <div class="progress-bar">
+                <div class="progress-fill">0%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-seedling"></i> Giai đoạn 1: Nền tảng cơ bản</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Khoá học HTML &
+                    CSS</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học cách xây dựng cấu trúc trang web với HTML. <a
+                        href="https://www.w3schools.com/html/default.asp" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu CSS để tạo kiểu và bố cục (layout) trang web. <a
+                        href="https://www.w3schools.com/css/default.asp" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học về Responsive Design (thiết kế đáp ứng) với Media Queries và
+                    Flexbox/Grid. <a
+                        href="https://viblo.asia/p/css-guide-responsive-web-design-and-media-queries-4dbZNNjyZYM"
+                        class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Thực hành với các dự án nhỏ như tạo trang portfolio, blog cá nhân. <a
+                        href="https://viblo.asia/p/7-du-an-web-nhap-mon-ly-tuong-cho-lap-trinh-vien-moi-vao-nghe-MG24BdkzLz3"
+                        class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Khoá học
+                    JavaScript cơ bản:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu các khái niệm cơ bản như biến, hàm, vòng lặp, điều kiện. <a
+                        href="https://www.w3schools.com/js/default.asp" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Làm quen với DOM (Document Object Model) để thao tác với các phần tử HTML.
+                    <a href="https://viblo.asia/p/dom-in-details-hieu-ro-hon-ve-document-object-model-ByEZkppolQ0"
+                        class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học cách xử lý sự kiện (event handling). <a
+                        href="https://viblo.asia/p/javascript-event-handlers-va-event-listeners-RQqKLb1rl7z"
+                        class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Công cụ hỗ trợ: <a
+                        href="https://200lab.io/blog/cong-cu-phat-trien-website-la-gi" class="join" target="_blank">Bắt
+                        đầu</a></li>
+                <li><input type="checkbox"> Học sử dụng Git và GitHub để quản lý mã nguồn. <a
+                        href="https://docs.github.com/en/github/getting-started-with-github/set-up-git" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Làm quen với trình soạn thảo mã như VS Code. <a
+                        href="https://code.visualstudio.com/docs/getstarted/introvideos" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-ruler"></i> Giai đoạn 2: Nâng cao kỹ năng</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Khoá học
+                    JavaScript Nâng cao:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về ES6+ (Arrow functions, Promises, Async/Await, Modules). <a
+                        href="https://viblo.asia/p/ecmascript-es6-la-gi-overview-es6-gAm5y9RA5db" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu về AJAX và Fetch API để tương tác với backend. <a
+                        href="https://blog.thanhnamnguyen.dev/cac-cach-fetch-api-su-dung-javascript" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Khoá học
+                    Framework/Library phổ biến:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học React.js (React được ưa chuộng năm 2025). <a href="https://react.dev/"
+                        class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Hiểu về Component-based Architecture. <a
+                        href="https://viblo.asia/p/kien-truc-dua-tren-component-DKBvdxwNvdX" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học cách quản lý state với Redux (cho React) hoặc Pinia/Vuex (cho Vue). <a
+                        href="https://redux.js.org/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Khoá học CSS nâng
+                    cao:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học SASS/SCSS để viết CSS hiệu quả hơn. <a
+                        href="https://sass-lang.com/guide" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu về CSS-in-JS (Styled-components, Emotion). <a
+                        href="https://styled-components.com/docs" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học về Animation và Transitions. <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Build Tools:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học cách sử dụng Webpack, Vite, hoặc Parcel để đóng gói ứng dụng. <a
+                        href="https://webpack.js.org/concepts/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Làm quen với npm/yarn/pnpm để quản lý thư viện. <a
+                        href="https://classic.yarnpkg.com/lang/en/docs/getting-started/" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-tools"></i> Giai đoạn 3: Chuyên sâu và xu hướng mới (6-12 tháng)</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">TypeScript:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học TypeScript để viết mã an toàn và dễ bảo trì hơn. <a
+                        href="https://www.typescriptlang.org/docs/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Testing:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học viết unit test với Jest hoặc Vitest. <a
+                        href="https://jestjs.io/docs/getting-started" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu về end-to-end testing với Cypress hoặc Playwright. <a
+                        href="https://www.cypress.io/documentation/overview/introduction" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Performance
+                    Optimization:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Tối ưu hóa hiệu suất trang web (Lazy Loading, Code Splitting, Caching). <a
+                        href="https://web.dev/learn/performance/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học về Web Vitals (Core Web Vitals của Google). <a
+                        href="https://web.dev/vitals/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Xu hướng mới:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Tìm hiểu về WebAssembly (Wasm) để chạy code hiệu năng cao. <a
+                        href="https://webassembly.org/docs/getting-started/" class="join" target="_blank">Bắt đầu</a>
+                </li>
+                <li><input type="checkbox"> Học về Progressive Web Apps (PWA) để tạo ứng dụng web offline. <a
+                        href="https://web.dev/progressive-web-apps/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Khám phá Web3 và Blockchain nếu có hứng thú. <a
+                        href="https://web3js.readthedocs.io/en/v1.10.0/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Backend cơ
+                    bản:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học Node.js và Express.js để hiểu cách hoạt động của backend. <a
+                        href="https://expressjs.com/en/starter/hello-world.html" class="join" target="_blank">Bắt
+                        đầu</a></li>
+                <li><input type="checkbox"> Làm quen với RESTful API và GraphQL. <a href="https://graphql.org/learn/"
+                        class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-rocket"></i> Giai đoạn 4: Thực hành và xây dựng portfolio (6-12 tháng)</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Dự án thực tế:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Xây dựng các dự án phức tạp hơn như ứng dụng quản lý công việc (Todo App),
+                    trang thương mại điện tử, hoặc ứng dụng chat. <a
+                        href="https://www.freecodecamp.org/news/javascript-projects-for-beginners/" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tham gia các dự án mã nguồn mở trên GitHub. <a
+                        href="https://github.com/showcases/front-end-development" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Portfolio:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Tạo một trang portfolio cá nhân để showcase các dự án của bạn. <a
+                        href="https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/"
+                        class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Đảm bảo portfolio của bạn responsive và có hiệu suất tốt. <a
+                        href="https://web.dev/vitals/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Kỹ năng mềm:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học cách làm việc nhóm với Agile/Scrum. <a
+                        href="https://www.atlassian.com/agile" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Rèn luyện kỹ năng giao tiếp và giải quyết vấn đề. <a
+                        href="https://www.mindtools.com/a3/communication-skills" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-star"></i> Giai đoạn 5: Cập nhật xu hướng và phát triển sự nghiệp (Liên tục)</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Theo dõi xu
+                    hướng:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Cập nhật các công nghệ mới như AI trong Front-end, Web3, hoặc Metaverse. <a
+                        href="https://web.dev/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Theo dõi các blog, diễn đàn, và hội nghị công nghệ. <a
+                        href="https://www.smashingmagazine.com/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Networking:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Tham gia các cộng đồng developer như Dev.to, Hashnode, hoặc Reddit. <a
+                        href="https://dev.to/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Kết nối với các developer khác trên LinkedIn. <a
+                        href="https://www.linkedin.com/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-code"></i> <a href="#" class="rocket-btn">Tìm kiếm cơ hội
+                    việc làm:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Cập nhật CV và portfolio thường xuyên. <a
+                        href="https://www.themuse.com/advice/resume-tips" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm kiếm việc làm trên các trang tuyển dụng như TopCV, VietnamWorks,
+                    LinkedIn. <a href="https://www.topcv.vn/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Chuẩn bị cho phỏng vấn xin việc. <a
+                        href="https://www.themuse.com/advice/job-interview-questions-and-answers" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.removeItem('isLoggedIn'); // Xóa trạng thái đăng nhập
+            window.location.href = 'DangNhap.html'; // Chuyển hướng đến trang đăng nhập
+        }
+
+        function toggleList(element) {
+            const list = element.nextElementSibling;
+            if (list.classList.contains('hidden')) {
+                list.classList.remove('hidden');
+            } else {
+                list.classList.add('hidden');
+            }
+        }
+
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+            const totalCount = checkboxes.length;
+            const progress = totalCount > 0 ? (checkedCount / totalCount) * 100 : 0;
+
+            const progressBarFill = document.querySelector('.progress-fill');
+            progressBarFill.style.width = `${progress}%`;
+            progressBarFill.textContent = `${Math.round(progress)}%`;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateProgress);
+            });
+            updateProgress(); // Gọi để hiển thị tiến trình ban đầu
+        });
+    </script>
+</body>
+
+</html>

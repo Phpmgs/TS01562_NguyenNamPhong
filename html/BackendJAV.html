@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/LoTrinh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="imege/x-icon" href="/image/logo XÀI TẠM-01.png">
+    <script src="/JS/roadmap.js"> </script>
+    <title>Lộ Trình Học BackEnd Java</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Trang trại những chú vịt mới học lập trình</h1>
+        <nav>
+            <ul>
+                <li><a href="Menu.html">🏠 Trang Chủ</a></li>
+                <li><a href="ChungToi.html">📖 Về chúng tôi</a></li>
+                <li><a href="KhoaHoc.html">📚 Khoá học</a></li>
+                <li><a href="LienHe.html">✉️ Liên Hệ</a></li>
+                <li><a href="#" onclick="logout()">🚪 Đăng xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="h2">🚀 RoadMap BackEnd Java</h2>
+        <div class="progress-container">
+            <img src="/image/image-removebg-preview.png" alt="Duck" class="duck">
+            <div class="progress-bar">
+                <div class="progress-fill">0%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2> 🌱 Giai đoạn 1: Nền tảng cơ bản </h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> Ngôn ngữ lập
+                    trình Java: </a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu sâu về cú pháp và các khái niệm cơ bản của Java (biến, vòng lặp, điều
+                    kiện, mảng, v.v.). <a href="https://www.w3schools.com/java/default.asp" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học về lập trình hướng đối tượng (OOP) trong Java: lớp, đối tượng, kế thừa,
+                    đa hình, đóng gói, và trừu tượng. <a href="https://www.w3schools.com/java/java_oop.asp" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Hiểu về các cấu trúc dữ liệu và giải thuật cơ bản (danh sách, stack, queue,
+                    tree, v.v.). <a href="https://www.geeksforgeeks.org/data-structures/" class="join"
+                        target="_blank">Bắt đầu</a></li>
+
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> Cơ sở dữ
+                    liệu:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học SQL và cách làm việc với các hệ quản trị cơ sở dữ liệu quan hệ như
+                    MySQL, PostgreSQL. <a href="https://www.w3schools.com/sql/" class="join" target="_blank">Bắt đầu</a>
+                </li>
+                <li><input type="checkbox"> Hiểu về thiết kế cơ sở dữ liệu và tối ưu hóa truy vấn.
+                    <a href="https://www.guru99.com/dbms-tutorial.html" class="join" target="_blank">Bắt đầu</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Git &
+                    GitHub:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học cách sử dụng Git để quản lý phiên bản code. <a
+                        href="https://docs.github.com/en/github/getting-started-with-github/set-up-git" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Thực hành với GitHub để quản lý dự án và cộng tác.
+                    <a href="https://docs.github.com/en/github/getting-started-with-github/github-flow" class="join"
+                        target="_blank">Bắt đầu</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2> 📐 Giai đoạn 2: Java Nâng cao </h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i><a href="#" class="rocket-btn"> Java
+                    Collections Framework: </a> </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu sâu về các collection trong Java như List, Set, Map, và cách sử dụng
+                    chúng hiệu quả. <a
+                        href="https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html"
+                        class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i><a href="#" class="rocket-btn">Multithreading
+                    và Concurrency:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về multithreading, cách tạo và quản lý thread trong Java. <a
+                        href="https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Hiểu về các vấn đề liên quan đến concurrency và cách giải quyết chúng. <a
+                        href="https://jenkov.com/tutorials/java-concurrency/index.html" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Java I/O và
+                    Networking:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox">Học về các lớp I/O trong Java để đọc/ghi file. <a
+                        href="https://docs.oracle.com/javase/tutorial/essential/io/index.html" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox">Hiểu về lập trình mạng với Java (sockets, HTTP requests). <a
+                        href="https://docs.oracle.com/javase/tutorial/networking/index.html" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Java 8+
+                    Features:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về các tính năng mới trong Java 8+ như Lambda Expressions, Stream API,
+                    Optional, v.v. <a href="https://www.oracle.com/java/technologies/javase/8-whats-new.html"
+                        class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2> 🛠️ Giai đoạn 3: Framework và Công nghệ Backend </h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Spring
+                    Framework:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học Spring Core, Spring MVC, và Spring Boot. <a
+                        href="https://spring.io/projects/spring-boot" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Xây dựng RESTful APIs với Spring Boot. <a
+                        href="https://spring.io/guides/gs/rest-service/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Hiểu về Dependency Injection và Inversion of Control (IoC) trong Spring. <a
+                        href="https://www.tutorialspoint.com/spring/spring_ioc_container.htm" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> Hibernate và
+                    JPA:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về ORM (Object-Relational Mapping) với Hibernate. <a
+                        href="http://hibernate.org/orm/documentation/5.6/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Hiểu về JPA (Java Persistence API) và cách sử dụng nó để tương tác với cơ sở
+                    dữ liệu. <a href="https://www.objectdb.com/java/jpa/" class="join" target="_blank">Bắt đầu</a></li>
+
+
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">
+                    Microservices:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox">Học về kiến trúc microservices và cách triển khai với Spring Cloud. <a
+                        href="https://spring.io/projects/spring-cloud" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox">Hiểu về các khái niệm như service discovery, load balancing, và API Gateway.
+                    <a href="https://microservices.io/" class="join" target="_blank">Bắt đầu</a></li>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">
+                    Security:</a> </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về bảo mật trong ứng dụng web với Spring Security. <a
+                        href="https://spring.io/projects/spring-security" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Hiểu về các lỗ hổng bảo mật phổ biến và cách phòng chống (XSS, CSRF, SQL
+                    Injection). <a href="https://owasp.org/www-project-top-ten/" class="join" target="_blank">Bắt
+                        đầu</a></li>
+
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2> 🛠️ Giai đoạn 4 : DevOps và Triển khai </h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> Docker và
+                    Kubernetes:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về containerization với Docker. <a
+                        href="https://www.docker.com/get-started/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Hiểu về orchestration với Kubernetes. <a
+                        href="https://kubernetes.io/docs/tutorials/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">CI/CD:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về Continuous Integration và Continuous Deployment với Jenkins, GitLab
+                    CI, hoặc GitHub Actions. <a href="https://www.redhat.com/en/topics/devops/what-is-ci-cd"
+                        class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Cloud
+                    Platforms:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học cách triển khai ứng dụng lên các nền tảng cloud như AWS, Google Cloud,
+                    hoặc Azure. <a href="https://aws.amazon.com/getting-started/" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="section">
+            <h2> 🚀 Giai đoạn 5: Nâng cao và chuyên sâu </h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> Performance
+                    Optimization:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học cách tối ưu hóa hiệu suất của ứng dụng java. <a
+                        href="https://www.oracle.com/technetwork/java/performance-139388.html" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Reactive
+                    Programming:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox">Học về reactive programming với Spring WebFlux và Project Reactor. <a
+                        href="https://projectreactor.io/docs/core/release/reference/" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Advanced
+                    Database Techniques:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu về sharding, replication, và các kỹ thuật nâng cao khác trong quản lý
+                    cơ sở dữ liệu. <a href="https://www.mongodb.com/docs/atlas/sharding/" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Event-Driven
+                    Architecture:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về kiến trúc hướng sự kiện và cách triển khai với Kafka hoặc RabbitMQ.
+                    <a href="https://kafka.apache.org/documentation.html" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.removeItem('isLoggedIn'); // Xóa trạng thái đăng nhập
+            window.location.href = 'DangNhap.html'; // Chuyển hướng đến trang đăng nhập
+        }
+
+        function toggleList(element) {
+            const list = element.nextElementSibling;
+            if (list.classList.contains('hidden')) {
+                list.classList.remove('hidden');
+            } else {
+                list.classList.add('hidden');
+            }
+        }
+
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+            const totalCount = checkboxes.length;
+            const progress = totalCount > 0 ? (checkedCount / totalCount) * 100 : 0;
+
+            const progressBarFill = document.querySelector('.progress-fill');
+            progressBarFill.style.width = `${progress}%`;
+            progressBarFill.textContent = `${Math.round(progress)}%`;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateProgress);
+            });
+            updateProgress(); // Gọi để hiển thị tiến trình ban đầu
+        });
+    </script>
+</body>
+
+</html>

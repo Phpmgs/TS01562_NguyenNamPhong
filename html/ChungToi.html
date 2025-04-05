@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+    <link rel="stylesheet" href="/CSS/chungtoi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="imege/x-icon" href="/image/logo XÀI TẠM-01.png">
+    <script src="/JS/roadmap.js"> </script>
+
+
+    <style>
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+            /* Điều chỉnh kích thước logo theo ý muốn */
+            height: auto;
+            z-index: 1000;
+            /* Đảm bảo logo hiển thị trên các phần tử khác */
+        }
+
+        /* Đảm bảo header có đủ không gian để chứa logo */
+        .header-content {
+            position: relative;
+            padding-top: 60px;
+            /* Điều chỉnh khoảng cách này nếu cần */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/image/logo XÀI TẠM-01.png" alt="Logo" class="logo">
+        <h1>Trang trại những chú vịt mới học lập trình</h1>
+        <nav>
+            <ul>
+                <li><a href="Menu.html">🏠 Trang Chủ</a></li>
+                <li><a href="ChungToi.html">📖 Về chúng tôi </a></li>
+                <li><a href="KhoaHoc.html">📚 Khoá học</a></li>
+                <li><a href="LienHe.html">✉️ Liên Hệ</a></li>
+                <li><a href="#" onclick="logout()">🚪 Đăng xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Phần giới thiệu cá nhân -->
+        <section class="profile-section">
+            <div class="profile-content">
+                <div class="profile-image">
+                    <img src="https://i.pinimg.com/736x/bf/2a/07/bf2a07841af32c6ee80fc3bc2401a361.jpg"
+                        alt="Hình ảnh bản thân">
+                </div>
+                <div class="profile-info">
+                    <h2>Nhóm Vịt Đần </h2>
+                    <p class="role">SD1901</p>
+                    <p>Nơi hội tụ các lập viên xuất sắc nhất hệ sao chổi.</p>
+                    <ul>
+                        <li><strong>Email:</strong> NhomVitDanPTCDFPT@gmail.com</li>
+                        <li><strong>Đã học tại:</strong> Fpoly School Hồ Chí Minh</li>
+                        <li><strong>Ngành:</strong> Công nghệ thông tin</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thông tin của 3 cá nhân khác -->
+        <section class="other-members">
+            <h2>Chúng tôi là những ai ?</h2>
+            <div class="members-grid">
+                <div class="member-card">
+                    <img src="https://i.pinimg.com/736x/38/c6/65/38c665b2c094d11751311865728fb162.jpg">
+                    <h3>Nguyễn Vĩnh Nguyên</h3>
+                    <p class="role">BackEnd Developer</p>
+                    <p>Chuyên gia về Node.js, MongoDB và REST API.</p>
+                    <ul>
+                        <li><strong>Email:</strong> VinhNguyenDEV@edu.fpt.vn</li>
+                        <li><strong>Đã học tại:</strong> Fpoly School Hồ Chí Minh</li>
+                        <li><strong>Ngành:</strong> Kỹ thuật phần mềm</li>
+                    </ul>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://i.pinimg.com/736x/f4/fa/0b/f4fa0b110eb887288debe25856437d5c.jpg">
+                    <h3>Hoàng Dương Thanh Tân</h3>
+                    <p class="role">Data Scientist</p>
+                    <p>Chuyên gia về Machine Learning, Python và Data Analysis.</p>
+                    <ul>
+                        <li><strong>Email:</strong> TanMotTanDEV@edu.fpt.vn</li>
+                        <li><strong>Đã học tại:</strong> Fpoly School Hồ Chí Minh</li>
+                        <li><strong>Ngành:</strong> Khoa học dữ liệu</li>
+                    </ul>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://i.pinimg.com/736x/8b/25/d5/8b25d5b550b25189675be6d98b7006e6.jpg">
+                    <h3>Nguyễn Nam Phong</h3>
+                    <p class="role">FontEnd Developer</p>
+                    <p>Chuyên gia về React, Java Spring và hệ thống phân tán.</p>
+                    <ul>
+                        <li><strong>Email:</strong> phongNamDEV@edu.fpt.vn</li>
+                        <li><strong>Đã học tại:</strong> Fpoly School Hồ Chí Minh</li>
+                        <li><strong>Ngành:</strong> Công nghệ thông tin</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Trang Lập Trình. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

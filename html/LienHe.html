@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Trang Lập Trình</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/LienHe.css">
+    <link rel="icon" type="imege/x-icon" href="/image/logo XÀI TẠM-01.png">
+    <script src="/JS/roadmap.js"> </script>
+</head>
+
+<body>
+    <header>
+        <img src="/image/logo XÀI TẠM-01.png" alt="Logo" class="logo">
+        <h1>Trang trại những chú vịt mới học lập trình</h1>
+        <nav>
+            <ul>
+                <li><a href="Menu.html">🏠 Trang Chủ</a></li>
+                <li><a href="ChungToi.html">📖 về chúng tôi</a></li>
+                <li><a href="KhoaHoc.html">📚 Khoá học</a></li>
+                <li><a href="LienHe.html">✉️ Liên Hệ</a></li>
+                <li><a href="#" onclick="logout()">🚪 Đăng xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="content">
+            <h2>✉️ Liên Hệ Với Chúng Tôi</h2>
+            <p>Nếu bạn có bất kỳ câu hỏi hoặc phản hồi nào, vui lòng điền vào form dưới đây hoặc liên hệ trực tiếp qua
+                thông tin bên dưới.</p>
+
+            <!-- Form liên hệ -->
+            <section class="contact-form">
+                <h3>📝 Form Liên Hệ</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Họ và tên:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nội dung:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Gửi</button>
+                </form>
+            </section>
+
+            <!-- Thông tin liên hệ -->
+            <section class="contact-info">
+                <h3>📞 Thông Tin Liên Hệ</h3>
+                <ul>
+                    <li><strong>Email:</strong> <a
+                            href="mailto:NhomVitDanPTCDFPT@gmail.com">NhomVitDanPTCDFPT@gmail.com</a></li>
+                    <li><strong>Số điện thoại:</strong> <a href="tel:+84123456789">+84 123 456 789</a></li>
+                    <li><strong>Địa chỉ:</strong> Innovation Building, Tân Hưng Thuận, Quận 12, Hồ Chí Minh</li>
+                </ul>
+            </section>
+
+            <!-- Mạng xã hội -->
+            <section class="social-media">
+                <h3>🌐 Mạng Xã Hội</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </section>
+
+            <!-- FAQ -->
+            <section class="faq">
+                <h3>❓ Câu Hỏi Thường Gặp (FAQ)</h3>
+                <div class="faq-item">
+                    <h4>Làm cách nào để đăng ký khóa học?</h4>
+                    <p>Bạn có thể đăng ký khóa học bằng cách truy cập trang <a href="KhoaHoc.html">khoá học</a> và chọn
+                        khóa học phù hợp.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Tôi có thể thanh toán bằng cách nào?</h4>
+                    <p>Chúng tôi hỗ trợ thanh toán qua thẻ ngân hàng, ví điện tử và chuyển khoản.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Làm cách nào để liên hệ hỗ trợ?</h4>
+                    <p>Bạn có thể sử dụng form liên hệ trên trang này hoặc gọi trực tiếp đến số điện thoại hỗ trợ.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Trang Lập Trình. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

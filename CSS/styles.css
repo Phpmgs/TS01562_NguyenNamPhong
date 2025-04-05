@@ -1,0 +1,235 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffcc00;
+}
+
+/* Menu chính */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+/* Hiệu ứng khi trỏ chuột vào menu */
+nav ul li a:hover {
+    background: #ffcc00;
+    color: #121212;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+}
+
+/* Layout chính */
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    color: #ffcc00;
+}
+
+/* Danh sách sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+/* Hiệu ứng khi trỏ chuột vào sidebar */
+.sidebar ul li a {
+    color: #bbbbbb;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+}
+
+.sidebar ul li a:hover {
+    background: #ffcc00;
+    color: #121212;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+}
+
+/* Nội dung chính */
+.content {
+    flex: 1;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Bài viết nổi bật */
+.featured-posts {
+    margin-top: 30px;
+}
+
+.featured-posts h3 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.post-card h4 {
+    font-size: 1.3rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.post-card p {
+    font-size: 1rem;
+    color: #bbbbbb;
+    margin-bottom: 15px;
+}
+
+.post-card a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.post-card a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .social-links a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+
+/* Định vị logo ở góc trái trên cùng */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px; /* Điều chỉnh kích thước logo theo ý muốn */
+    height: auto;
+    z-index: 1000; /* Đảm bảo logo hiển thị trên các phần tử khác */
+}
+
+/* Đảm bảo header có đủ không gian để chứa logo */
+.header-content {
+    position: relative;
+    padding-top: 60px; /* Điều chỉnh khoảng cách này nếu cần */
+}
+
+/* Các quy tắc CSS khác cho trang web */

@@ -1,0 +1,149 @@
+/* Form liên hệ */
+.contact-form {
+    margin-bottom: 40px;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Thông tin liên hệ */
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.contact-info ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Mạng xã hội */
+.social-media {
+    margin-bottom: 40px;
+}
+
+.social-media h3 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin-bottom: 10px;
+}
+
+.social-media ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.social-media ul li a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ */
+.faq {
+    margin-bottom: 40px;
+}
+
+.faq h3 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    font-size: 1.3rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.faq-item a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}

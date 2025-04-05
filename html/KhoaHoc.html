@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Tập - Trang Lập Trình</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/KhoaHoc.css">
+    <link rel="icon" type="imege/x-icon" href="/image/logo XÀI TẠM-01.png">
+    <script src="/JS/roadmap.js"> </script>
+</head>
+
+<body>
+    <header>
+        <img src="/image/logo XÀI TẠM-01.png" alt="Logo" class="logo">
+        <h1>Trang trại những chú vịt mới học lập trình</h1>
+        <nav>
+            <ul>
+                <li><a href="Menu.html">🏠 Trang Chủ</a></li>
+                <li><a href="ChungToi.html">📖 Về chúng tôi</a></li>
+                <li><a href="KhoaHoc.html">📚 Khoá học</a></li>
+                <li><a href="LienHe.html">✉️ Liên Hệ</a></li>
+                <li><a href="#" onclick="logout()">🚪 Đăng xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="content">
+            <h2>📚 Khoá học</h2>
+            <p>Chào mừng bạn đến với trang! Tại đây, bạn có thể tìm thấy các khóa học, tài liệu và bài tập thực hành để
+                nâng cao kỹ năng lập trình của mình.</p>
+
+            <!-- Khóa học trả phí -->
+            <section class="paid-courses">
+                <h3>💳 Khóa Học Trả Phí</h3>
+                <div class="course-grid">
+                    <!-- Khóa học 1 -->
+                    <div class="course-card">
+                        <img src="https://i.ytimg.com/vi/5i8ej1-GpFU/maxresdefault.jpg" alt="Fullstack Node.js">
+                        <div class="course-info">
+                            <h4>Khóa học Fullstack Node.js</h4>
+                            <p>Học cách xây dựng ứng dụng web fullstack với Node.js, Express và MongoDB.</p>
+                            <p class="price">Giá: 1,500,000 VNĐ</p>
+                            <a href="https://www.youtube.com/playlist?list=PLSDeUiTMfxW6VChKWb26Z_mPR4f6fAmMV"
+                                target="_blank" class="enroll-button">Đăng ký ngay</a>
+                        </div>
+                    </div>
+
+                    <!-- Khóa học 2 -->
+                    <div class="course-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwfpQ2gh_EFh3HXcj9LYxaoZ8U_B6tXjB6IQ&s"
+                            alt="Data Science từ A-Z">
+                        <div class="course-info">
+                            <h4>Khóa học Data Science từ A-Z</h4>
+                            <p>Khám phá Data Science với Python, từ phân tích dữ liệu đến Machine Learning.</p>
+                            <p class="price">Giá: 2,000,000 VNĐ</p>
+                            <a href="https://www.youtube.com/watch?v=SJuR41tlE9k" target="_blank"
+                                class="enroll-button">Đăng ký ngay</a>
+                        </div>
+                    </div>
+
+                    <!-- Khóa học 3 -->
+                    <div class="course-card">
+                        <img src="https://www.creativeitinstitute.com/images/course/course_1662804460.jpg"
+                            alt="Machine Learning với Python">
+                        <div class="course-info">
+                            <h4>Khóa học Machine Learning với Python</h4>
+                            <p>Học cách xây dựng và triển khai các mô hình Machine Learning.</p>
+                            <p class="price">Giá: 2,500,000 VNĐ</p>
+                            <a href="https://www.youtube.com/watch?v=hDKCxebp88A" target="_blank"
+                                class="enroll-button">Đăng ký ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="free-courses">
+                <h3>🎁 Khóa Học Miễn Phí</h3>
+                <ul>
+                    <li><a href="https://example.com/free-course-1" target="_blank">Lập trình Frontend cơ bản</a></li>
+                    <li><a href="https://example.com/free-course-2" target="_blank">Học JavaScript trong 30 ngày</a>
+                    </li>
+                    <li><a href="https://example.com/free-course-3" target="_blank">Nhập môn Python cho người mới bắt
+                            đầu</a></li>
+                </ul>
+            </section>
+
+            <!-- Tài nguyên học tập -->
+            <section class="learning-resources">
+                <h3>📂 Tài Nguyên Học Tập</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>📚 Ebooks</h4>
+                        <ul>
+                            <li><a href="https://example.com/ebook-1" target="_blank">Ebook: Lập trình Python cơ bản</a>
+                            </li>
+                            <li><a href="https://example.com/ebook-2" target="_blank">Ebook: Hướng dẫn React.js</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h4>🎥 Video Tutorials</h4>
+                        <ul>
+                            <li><a href="https://example.com/video-1" target="_blank">Video: Xây dựng REST API với
+                                    Node.js</a></li>
+                            <li><a href="https://example.com/video-2" target="_blank">Video: Học CSS Grid trong 30
+                                    phút</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bài tập thực hành -->
+            <section class="practice-exercises">
+                <h3>💻 Bài Tập Thực Hành</h3>
+                <div class="exercise-grid">
+                    <div class="exercise-card">
+                        <h4>Bài tập JavaScript</h4>
+                        <p>Giải các bài tập JavaScript cơ bản đến nâng cao.</p>
+                        <a href="https://example.com/js-exercises" target="_blank">Bắt đầu</a>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>Dự án nhỏ: Xây dựng To-Do App</h4>
+                        <p>Hướng dẫn xây dựng ứng dụng To-Do với React.</p>
+                        <a href="https://example.com/todo-project" target="_blank">Xem hướng dẫn</a>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>Bài tập Python</h4>
+                        <p>Thực hành Python với các bài tập về thuật toán.</p>
+                        <a href="https://example.com/python-exercises" target="_blank">Bắt đầu</a>
+                    </div>
+                </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Trang Lập Trình. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

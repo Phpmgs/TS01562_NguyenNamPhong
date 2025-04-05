@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/LoTrinh.css">
+    <link rel="icon" type="imege/x-icon" href="/image/logo XÀI TẠM-01.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=database" />
+    <script src="/JS/roadmap.js"></script>
+    <title>Lộ Trình Học Data Science</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Trang trại những chú vịt mới học lập trình</h1>
+        <nav>
+            <ul>
+                <li><a href="Menu.html"><i class="fas fa-home"></i> Trang Chủ</a></li>
+                <li><a href="ChungToi.html"><i class="fas fa-book"></i> Về chúng tôi</a></li>
+                <li><a href="KhoaHoc.html"><i class="fas fa-graduation-cap"></i> Khoá học</a></li>
+                <li><a href="LienHe.html"><i class="fas fa-envelope"></i> Liên Hệ</a></li>
+                <li><a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="h2"><i class="fas fa-chart-line"></i> Roadmap Data Science</h2>
+        <div class="progress-container">
+            <img src="/image/image-removebg-preview.png" alt="Duck" class="duck">
+            <div class="progress-bar">
+                <div class="progress-fill">0%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-layer-group"></i> Giai đoạn 1: Kiến thức nền tảng</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-calculator"></i> <a href="#" class="rocket-btn"> Toán học:
+                </a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Đại số tuyến tính: Ma trận, vector, định thức, không gian vector. <a
+                        href="https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_số_tuyến_tính" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Giải tích: Đạo hàm, tích phân, chuỗi Taylor. <a
+                        href="https://vi.wikipedia.org/wiki/Giải_tích" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Xác suất - Thống kê: Phân phối xác suất, kiểm định giả thuyết, hồi quy tuyến
+                    tính. <a href="https://vi.wikipedia.org/wiki/Xác_suất_thống_kê" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fab fa-python"></i> <a href="#" class="rocket-btn">Python (hoặc R),
+                    nắm vững:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Cấu trúc dữ liệu (list, tuple, dictionary). <a
+                        href="https://docs.python.org/3/tutorial/datastructures.html" class="join" target="_blank">Bắt
+                        đầu</a></li>
+                <li><input type="checkbox"> Xử lý file, điều kiện, vòng lặp, hàm. <a
+                        href="https://www.w3schools.com/python/python_file_handling.asp" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> OOP, thư viện NumPy, Pandas, Matplotlib, Seaborn. <a
+                        href="https://numpy.org/doc/stable/user/quickstart.html" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-search"></i> Giai đoạn 2: Xử lý dữ liệu & Data Engineering</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-database"></i> <a href="#" class="rocket-btn"> Xử lý dữ
+                    liệu</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Thu thập dữ liệu: Web scraping (BeautifulSoup, Selenium), API. <a
+                        href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" class="join" target="_blank">Bắt
+                        đầu</a></li>
+                <li><input type="checkbox"> Tiền xử lý dữ liệu: Làm sạch dữ liệu, xử lý dữ liệu thiếu, outliers. <a
+                        href="https://pandas.pydata.org/docs/user_guide/missing_data.html" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-hdd"></i> <a href="#" class="rocket-btn">Lưu trữ dữ
+                    liệu:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> SQL (MySQL, PostgreSQL). <a href="https://www.w3schools.com/sql/"
+                        class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> NoSQL (MongoDB). <a href="https://www.mongodb.com/docs/" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Big Data (Hadoop, Spark). <a
+                        href="https://spark.apache.org/docs/latest/quick-start.html" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-brain"></i> Giai đoạn 3: Machine Learning cơ bản</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-chart-line"></i> <a href="#" class="rocket-btn"> Supervised
+                    Learning (Học có giám sát):</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hồi quy tuyến tính & hồi quy logistic. <a
+                        href="https://scikit-learn.org/stable/modules/linear_model.html" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Cây quyết định, Random Forest, SVM. <a
+                        href="https://scikit-learn.org/stable/modules/tree.html" class="join" target="_blank">Bắt
+                        đầu</a></li>
+                <li><input type="checkbox"> Mạng neural cơ bản. <a
+                        href="https://www.tensorflow.org/guide/keras/sequential_model" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-project-diagram"></i> <a href="#"
+                    class="rocket-btn">Unsupervised Learning (Học không giám sát):</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox">Phân cụm K-means, DBSCAN. <a
+                        href="https://scikit-learn.org/stable/modules/clustering.html" class="join" target="_blank">Bắt
+                        đầu</a></li>
+                <li><input type="checkbox">Giảm chiều PCA, t-SNE. <a
+                        href="https://scikit-learn.org/stable/modules/decomposition.html" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-book"></i> <a href="#" class="rocket-btn">Thư viện ML quan
+                    trọng: Scikit-learn, TensorFlow, PyTorch.</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Làm quen với Scikit-learn. <a href="https://scikit-learn.org/stable/"
+                        class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Làm quen với TensorFlow. <a href="https://www.tensorflow.org/" class="join"
+                        target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Làm quen với PyTorch. <a href="https://pytorch.org/" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-network-wired"></i> Giai đoạn 4: Deep Learning & AI nâng cao</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-network-wired"></i> <a href="#" class="rocket-btn">Neural
+                    Networks (Mạng nơ-ron nhân tạo).</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Tìm hiểu về mạng Neural Networks. <a
+                        href="https://www.tensorflow.org/guide/learn" target="_blank" class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-eye"></i> <a href="#" class="rocket-btn">CNN (Xử lý ảnh),
+                    RNN (Xử lý chuỗi), Transformers (GPT, BERT):</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Tìm hiểu về CNN. <a href="https://www.tensorflow.org/tutorials/images/cnn"
+                        target="_blank" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu về RNN. <a href="https://www.tensorflow.org/guide/rnn"
+                        target="_blank" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu về Transformers. <a
+                        href="https://huggingface.co/transformers/quicktour.html" target="_blank" class="join">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-language"></i> <a href="#" class="rocket-btn"> Ứng dụng thực
+                    tế: Xử lý ngôn ngữ tự nhiên (NLP), Computer Vision.</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Tìm hiểu về NLP. <a
+                        href="https://www.tensorflow.org/tutorials/text/word_embeddings" target="_blank"
+                        class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu về Computer Vision. <a
+                        href="https://www.tensorflow.org/tutorials/images/classification" target="_blank"
+                        class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-cogs"></i> Giai đoạn 5: Data Science thực tế & MLOps</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-cogs"></i> <a href="#" class="rocket-btn"> Triển khai và vận
+                    hành mô hình:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Triển khai mô hình: Flask, FastAPI, Streamlit. <a
+                        href="https://flask.palletsprojects.com/en/2.3.x/" target="_blank" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> MLOps: Docker, Kubernetes, CI/CD. <a href="https://www.tensorflow.org/tfx"
+                        target="_blank" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Big Data & Cloud: AWS, Google Cloud, Azure. <a
+                        href="https://aws.amazon.com/" target="_blank" class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-briefcase"></i> Giai đoạn 6: Hướng đi nghề nghiệp & dự án thực tế</h2>
+            <h3 onclick="toggleList(this)"><i class="fas fa-briefcase"></i> <a href="#" class="rocket-btn"> Lựa chọn
+                    nghề nghiệp:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Chuyên gia Machine Learning. <a
+                        href="https://www.coursera.org/specializations/machine-learning-engineer" target="_blank"
+                        class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> AI Engineer. <a
+                        href="https://www.coursera.org/professional-certificates/google-ai" target="_blank"
+                        class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Data Scientist. <a
+                        href="https://www.coursera.org/specializations/jhu-data-science" target="_blank"
+                        class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fas fa-project-diagram"></i> <a href="#" class="rocket-btn">Dự án
+                    thực tế</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Dự án thực tế: Dự đoán giá nhà, chatbot AI, hệ thống khuyến nghị. <a
+                        href="https://www.kaggle.com/competitions" target="_blank" class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

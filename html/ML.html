@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/LoTrinh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="/JS/roadmap.js"> </script>
+    <link rel="icon" type="imege/x-icon" href="/image/logo XÀI TẠM-01.png">
+    <title>Lộ Trình Học Fullstack Node.js</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Trang trại những chú vịt mới học lập trình</h1>
+        <nav>
+            <ul>
+                <li><a href="Menu.html">🏠 Trang Chủ</a></li>
+                <li><a href="ChungToi.html">📖 Về chúng tôi</a></li>
+                <li><a href="KhoaHoc.html">📚 Khoá Học</a></li>
+                <li><a href="LienHe.html">✉️ Liên Hệ</a></li>
+                <li><a href="#" onclick="logout()">🚪 Đăng xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="h2"> Roadmap Machine Learning</h2>
+        <div class="progress-container">
+            <img src="/image/image-removebg-preview.png" alt="Duck" class="duck">
+            <div class="progress-bar">
+                <div class="progress-fill">0%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2> 🌱 Giai đoạn 1: Nền tảng cơ bản (1-3 tháng)</h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Toán học và
+                    Thống kê</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học đại số tuyến tính (Linear Algebra). <a
+                        href="https://www.khanacademy.org/math/linear-algebra" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu xác suất và thống kê (Probability & Statistics). <a
+                        href="https://www.khanacademy.org/math/statistics-probability" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học giải tích (Calculus) để hiểu các thuật toán tối ưu hóa. <a
+                        href="https://www.khanacademy.org/math/calculus-1" class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Lập trình
+                    Python cơ bản</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học cú pháp Python cơ bản. <a href="https://www.w3schools.com/python/"
+                        class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Làm quen với thư viện NumPy và Pandas. <a
+                        href="https://numpy.org/doc/stable/user/quickstart.html" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học cách xử lý dữ liệu với Pandas. <a
+                        href="https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/index.html"
+                        class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <!-- Giai đoạn 2: Các khái niệm cơ bản về Machine Learning -->
+        <div class="section">
+            <h2> 📐 Giai đoạn 2: Các khái niệm cơ bản về Machine Learning (3-6 tháng)</h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Giới thiệu về
+                    Machine Learning</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu các khái niệm cơ bản: Supervised Learning, Unsupervised Learning,
+                    Reinforcement Learning. <a href="https://www.coursera.org/learn/machine-learning" class="join">Bắt
+                        đầu</a></li>
+                <li><input type="checkbox"> Học về quy trình làm việc trong ML: Data Preprocessing, Model Training,
+                    Evaluation. <a href="https://towardsdatascience.com/the-7-steps-of-machine-learning-2877d7e5548e"
+                        class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Các thuật
+                    toán cơ bản</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về Linear Regression và Logistic Regression. <a
+                        href="https://www.analyticsvidhya.com/blog/2021/10/understanding-the-fundamentals-of-linear-regression/"
+                        class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu về Decision Trees và Random Forests. <a
+                        href="https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/"
+                        class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học về K-Means Clustering (Unsupervised Learning). <a
+                        href="https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/"
+                        class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <!-- Giai đoạn 3: Nâng cao kỹ năng -->
+        <div class="section">
+            <h2> 🛠️ Giai đoạn 3: Nâng cao kỹ năng (6-12 tháng)</h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Deep Learning
+                    cơ bản</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về Neural Networks. <a
+                        href="https://www.coursera.org/learn/neural-networks-deep-learning" class="join">Bắt đầu</a>
+                </li>
+                <li><input type="checkbox"> Tìm hiểu về Convolutional Neural Networks (CNNs) cho xử lý ảnh. <a
+                        href="https://www.analyticsvidhya.com/blog/2021/05/convolutional-neural-networks-cnn/"
+                        class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học về Recurrent Neural Networks (RNNs) cho xử lý chuỗi thời gian. <a
+                        href="https://www.analyticsvidhya.com/blog/2021/03/introduction-to-recurrent-neural-networks/"
+                        class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Xử lý dữ liệu
+                    lớn</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về Apache Spark và Hadoop. <a
+                        href="https://spark.apache.org/docs/latest/quick-start.html" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tìm hiểu về cách xử lý dữ liệu lớn với PySpark. <a
+                        href="https://www.datacamp.com/tutorial/pyspark-tutorial" class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <!-- Giai đoạn 4: Thực hành và xây dựng portfolio -->
+        <div class="section">
+            <h2> 🚀 Giai đoạn 4: Thực hành và xây dựng portfolio (6-12 tháng)</h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Dự án thực
+                    tế</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Xây dựng các dự án như dự đoán giá nhà, phân loại ảnh, hoặc chatbot. <a
+                        href="https://www.kaggle.com/" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Tham gia các cuộc thi trên Kaggle để rèn luyện kỹ năng. <a
+                        href="https://www.kaggle.com/competitions" class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Portfolio</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Tạo một trang portfolio để showcase các dự án ML của bạn. <a
+                        href="https://towardsdatascience.com/how-to-build-a-data-science-portfolio-5f566517c79c"
+                        class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Đảm bảo portfolio của bạn có đầy đủ tài liệu và mã nguồn. <a
+                        href="https://www.datacamp.com/blog/how-to-build-a-data-science-portfolio" class="join">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <!-- Giai đoạn 5: Cập nhật xu hướng và phát triển sự nghiệp -->
+        <div class="section">
+            <h2> 🌟 Giai đoạn 5: Cập nhật xu hướng và phát triển sự nghiệp (Liên tục)</h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Theo dõi xu
+                    hướng</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Cập nhật các công nghệ mới như Generative AI, Reinforcement Learning. <a
+                        href="https://www.deeplearning.ai/" class="join">Bắt đầu</a></li>
+                <li><input type="checkbox"> Theo dõi các blog, diễn đàn, và hội nghị công nghệ. <a
+                        href="https://towardsdatascience.com/" class="join">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

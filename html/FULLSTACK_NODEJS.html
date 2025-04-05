@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/LoTrinh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="/JS/roadmap.js"></script>
+    <link rel="icon" type="imege/x-icon" href="/image/logo XÀI TẠM-01.png">
+    <title>Lộ Trình Học Fullstack Node.js</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Trang trại những chú vịt mới học lập trình</h1>
+        <nav>
+            <ul>
+                <li><a href="Menu.html">🏠 Trang Chủ</a></li>
+                <li><a href="ChungToi.html">📖 Về chúng tôi</a></li>
+                <li><a href="KhoaHoc.html">📚 Khoá học</a></li>
+                <li><a href="LienHe.html">✉️ Liên Hệ</a></li>
+                <li><a href="#" onclick="logout()">🚪 Đăng xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="h2"><i class="fa-brands fa-node-js"></i>RoadMap Fullstack NODEJS</h2>
+        <div class="progress-container">
+            <img src="/image/image-removebg-preview.png" alt="Duck" class="duck">
+            <div class="progress-bar">
+                <div class="progress-fill">0%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2> <i class="fa-brands fa-js"></i> Giai đoạn 1: Nền tảng cơ bản </h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#"
+                    class="rocket-btn">HTML/CSS/JavaScript: </a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu sâu về HTML5, CSS3, và JavaScript (ES6+). <a
+                        href="https://www.w3schools.com/html/default.asp" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học cách sử dụng các thư viện và framework như Bootstrap, Tailwind CSS. <a
+                        href="https://www.w3schools.com/css/default.asp" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Làm quen với JavaScript. <a href="https://www.w3schools.com/js/default.asp"
+                        class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Git &
+                    GitHub:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học cách sử dụng Git để quản lý phiên bản code. <a
+                        href="https://www.w3schools.com/git/default.asp" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Thực hành với GitHub để quản lý dự án và cộng tác.
+                    <a href="https://docs.github.com/en/get-started/quickstart/hello-world" class="join"
+                        target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Cơ sở dữ
+                    liệu:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học SQL và NoSQL (MySQL, PostgreSQL, MongoDB). <a
+                        href="https://www.w3schools.com/sql/default.asp" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Hiểu cách thiết kế cơ sở dữ liệu và tối ưu hóa truy vấn.
+                    <a href="https://www.javatpoint.com/dbms-tutorial" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2> <i class="fa-solid fa-server"></i> Giai đoạn 2: Backend với Node.js</h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i><a href="#" class="rocket-btn">Node.js cơ
+                    bản:</a> </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu về Node.js và cách hoạt động của nó. <a
+                        href="https://nodejs.org/en/docs/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học về các module cốt lõi như fs, http, path. <a
+                        href="https://nodejs.org/api/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i><a href="#"
+                    class="rocket-btn">Express.js:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Xây dựng RESTful APIs với Express.js. <a href="https://expressjs.com/"
+                        class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học về middleware, routing, và error handling. <a
+                        href="https://expressjs.com/en/guide/using-middleware.html" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#"
+                    class="rocket-btn">Authentication & Authorization:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox">Học về JWT, OAuth, và cách triển khai authentication. <a
+                        href="https://jwt.io/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#"
+                    class="rocket-btn">WebSockets:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu về WebSockets và cách sử dụng Socket.io để xây dựng ứng dụng real-time.
+                    <a href="https://socket.io/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2> <i class="fa-brands fa-react"></i> Giai đoạn 3: Frontend với React.js </h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">React.js cơ
+                    bản:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu về components, props, state, và lifecycle methods. <a
+                        href="https://react.dev/" class="join" target="_blank">Bắt đầu</a></li>
+                <li><input type="checkbox"> Học về React Hooks và Context API.<a href="https://react.dev/learn/state"
+                        class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> State
+                    Management:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về Redux hoặc Zustand để quản lý state trong ứng dụng lớn. <a
+                        href="https://redux.js.org/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> Routing:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Sử dụng React Router để quản lý routing trong ứng dụng. <a
+                        href="https://reactrouter.com/en/main" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> Styling:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về CSS-in-JS với Styled-components hoặc Emotion. <a
+                        href="https://styled-components.com/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2> <i class="fa-solid fa-code-branch"></i> Giai đoạn 4 : Fullstack Integration </h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> API
+                    Integration:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Kết nối frontend với backend thông qua RESTful APIs hoặc GraphQL. <a
+                        href="https://www.restapitutorial.com/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">GraphQL:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về GraphQL và cách triển khai với Apollo Server và Apollo Client. <a
+                        href="https://graphql.org/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Testing:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về unit testing, integration testing, và end-to-end testing với Jest,
+                    Mocha, Chai, và Cypress. <a href="https://jestjs.io/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">DevOps:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về CI/CD, Docker, và Kubernetes. <a
+                        href="https://www.redhat.com/en/topics/devops/what-is-ci-cd" class="join" target="_blank">Bắt
+                        đầu</a></li>
+                <li><input type="checkbox"> Triển khai ứng dụng lên các nền tảng như AWS, Heroku, hoặc Vercel. <a
+                        href="https://aws.amazon.com/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2> <i class="fa-solid fa-rocket"></i> Giai đoạn 5: Nâng cao và chuyên sâu </h2>
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn"> Performance
+                    Optimization:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học cách tối ưu hóa hiệu suất của ứng dụng cả frontend và backend. <a
+                        href="https://web.dev/optimize/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#" class="rocket-btn">Security:</a>
+            </h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Hiểu về các lỗ hổng bảo mật phổ biến và cách phòng chống (XSS, CSRF, SQL
+                    Injection). <a href="https://owasp.org/www-project-top-ten/" class="join" target="_blank">Bắt
+                        đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#"
+                    class="rocket-btn">Microservices:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về kiến trúc microservices và cách triển khai với Node.js. <a
+                        href="https://microservices.io/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 onclick="toggleList(this)"><i class="fa-solid fa-code"></i> <a href="#"
+                    class="rocket-btn">Serverless:</a></h3>
+            <ul class="hidden">
+                <li><input type="checkbox"> Học về serverless architecture với AWS Lambda hoặc Firebase Functions. <a
+                        href="https://aws.amazon.com/lambda/" class="join" target="_blank">Bắt đầu</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
